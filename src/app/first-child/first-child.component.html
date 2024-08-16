@@ -1,0 +1,19 @@
+<div class="bg-primary text-light w-100 p-5 my-3 mx-auto rounded row">
+  <div class="fs-2 col-12">
+    <p>ToDo Form</p>
+  </div>
+  <div class="col align-self-end">Add new To Do</div>
+
+  <div class="row col-12">
+    <form action="">
+      <input
+        type="text"
+        class="m-3 col-9"
+        placeholder="Enter New Task"
+        [(ngModel)]="input_value"
+        name="task"
+      />
+      <button class="btn btn-dark col-2" (click)="Add()">Add</button>
+    </form>
+  </div>
+</div>

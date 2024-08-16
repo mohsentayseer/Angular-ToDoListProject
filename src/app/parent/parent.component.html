@@ -1,0 +1,12 @@
+<div class="container border border-3 border-danger p-4">
+  <app-first-child (sendData) = "handleData($event)"></app-first-child>
+  <div class="fs-1 text-secondary rounded">TO DO LIST</div>
+  <div class="mx-auto d-flex flex-column">
+    @for(task of tasksArray; track task.id){
+
+    <app-second-child [task]="task" (delete)="handleDelete($event)" (complete)="handleCompleted($event)" > </app-second-child>
+    }@empty {
+    <p class="fs-2">You didn't add any Task Yet</p>
+    }
+  </div>
+</div>

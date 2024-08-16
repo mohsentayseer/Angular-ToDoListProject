@@ -1,0 +1,8 @@
+<div class="card m-2 mt-2 text-bg-primary my-auto  bg-gradient">
+    <div class="card-body row p-3">
+      <h5 class=" card-title col-6" [ngClass] = "task.hascompleted ? 'completed' : 'notcompleted' ">{{task.title}}</h5>
+
+      <button class="btn btn-success col-3" (click)="Completed(task.id)" >Completed</button>
+      <button class="btn btn-danger col-3" (click)="Delete(task.id)" >Delete</button>
+    </div>
+  </div>

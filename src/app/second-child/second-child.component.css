@@ -1,0 +1,8 @@
+.completed {
+    
+    text-decoration: line-through;
+
+}
+.notcompleted{
+text-decoration:none;
+}
